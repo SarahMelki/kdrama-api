@@ -829,7 +829,7 @@ app.get('/style.css', (req,res)=>{
     res.sendFile(__dirname + '/style.css')
   })
   
-app.get('/main.js', (req,res)=>{
+app.get('/index.js', (req,res)=>{
     res.sendFile(__dirname + '/index.js')
   })
   
