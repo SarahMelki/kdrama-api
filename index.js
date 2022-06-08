@@ -7,8 +7,16 @@ async function apiRequest(){
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('h2').innerText = data
-    }catch(error){
+        document.querySelector('.releaseYear').innerText = data.releaseYear
+        document.querySelector('.genre').innerText = data.genre
+        document.querySelector('.seasons').innerText = data.seasons
+        document.querySelector('.episodes').innerText = data.episodes
+        document.querySelector('.epRunTime').innerText = data.epRunTimeMinutes
+        document.querySelector('.starring').innerText = data.starring
+        document.querySelector('.rating').innerText = data.googleRating
+        document.querySelector('.writtenBy').innerText = data.writtenBy
+    }
+    catch(error){
         console.log(error)
     }
 }
